@@ -12,9 +12,9 @@
 10.	到交作業專用的Repo https://github.com/Lidemy/homeworks-3rd
 11.	Issue 建立New Issue
 12.	標題格式規範 [Week1]，打上標題、內文，commit
-13.	if 作業pass ，Issue 會被Huil關掉，else if 修改作業
+13.	if 作業pass ，Huli會同意merge並關閉Issue，else if 修改作業
 14.	回到CLI介面，git checkout master 
-15.	git pull origin master
+15.	git pull origin master，把merge後的檔案拉下來
 16.	git branch –d week1
 17.	git branch 剩下master
 18.	完成!
