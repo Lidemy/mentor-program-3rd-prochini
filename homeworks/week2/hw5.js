@@ -1,5 +1,4 @@
 /* eslint linebreak-style: ["error", "windows"] */
-
 function join(str, num) { // \r\n
   // do stuff \r\n
   let result = '';
@@ -19,5 +18,5 @@ function repeat(str, times) {
   }
   return num;
 }// \r\n
-console.log(join([1, 2, 3], '!'));// \r\n
-console.log(repeat('a', 5));// \r\n
+console.log(join(['a', 1, 'b', 2, 'c', 3], ','));// \r\n
+console.log(repeat('yoyo', 2));// \r\n
