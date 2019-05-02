@@ -1,5 +1,4 @@
 function capitalize(str) {
-  return str;
+  return str.charAt(0).toUpperCase() + str.substring(1);
 }
-
-console.log(capitalize('hello'));
+console.log(capitalize('nick'));
