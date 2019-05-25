@@ -1,0 +1,256 @@
+body{
+    margin:0px;
+
+}
+nav{
+    position: relative;
+    box-shadow: 4px 4px 12px -2px rgba(209, 209, 209, 0.5);
+    width: 100%;
+    height: 4em;
+    display: inline-block;
+    padding: 0px 15%;
+    box-sizing: border-box;
+}
+nav > div{
+    display: inline-block;
+}
+nav>a{
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+}
+nav>h2{
+    display: inline-block;
+    cursor:pointer;
+    position: absolute;
+    left: 21%;
+    top: 10%;
+}
+nav>.rightbar{
+    right:20px;
+    top: 10px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 14% ;
+    box-sizing: border-box;
+    top: 4%;
+}
+nav>.rightbar>a{
+    padding: 0px 10px ;
+    transition: all 1s;
+}
+nav>.rightbar>a:hover{
+    color:wheat;
+    opacity: 0.5;
+    filter: Alpha(opacity=50);
+}
+#prochini{
+    border-radius: 50%;
+    vertical-align: sub;
+}
+article{
+    padding: 3% 10%;
+    position: relative;
+    padding: 2% 25% ;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    color: rgba(0,0,0,84) ;
+
+}
+article>h1{
+    font-size: 2.5em;
+    font-family:  Georgia,Cambria,"Times New Roman",Times,serif;
+    font-weight: 400;
+    padding: 5px 0;    
+    letter-spacing: 0;
+
+}
+.author{
+    display:inline-block;
+    margin: 0;
+
+}
+.author>a>img{
+    border-radius: 50%;
+}
+.author>h5{
+    display:inline-block;
+    color: black;
+    font-family: Arial,sans-serif;
+    font-weight:100;
+    line-height: 1.2;
+    margin: 0;
+    padding-left: 15px;
+    vertical-align: super;
+}
+.author>h5>p{
+    color: gray;
+    display:inline;
+    margin: 0;
+}
+article>p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+    line-height: 1.4;
+
+
+}
+article>p>span{
+    font-style: italic;
+    font-size: 1em;
+    line-height: 1.4;
+    font-weight: 520;
+
+}
+article>img{
+    width: 100%;
+}
+article>p>a {
+
+    color: black;}
+#iconBar{
+    position: fixed;
+    top: -200px;
+    width: 10px;
+    display: block;
+    transition: top ease 0s;
+    margin: 0 16%;
+    box-sizing: border-box;
+    }
+
+#iconBar a{
+    display:block;
+    padding: 5px;
+    font-family: monospace;
+    color: gray;
+    text-decoration:none;
+    opacity: 0.5;
+}
+#iconBar a:hover{
+    opacity: 0.8;
+    filter: Alpha(opacity=50);
+}
+.suggest{
+    background:whitesmoke;
+    height: 31em;
+    display: flex;
+    padding: 2% 0;
+    justify-content:  center;
+}
+.suggest>.box{
+    display:inline-block;
+    width: auto;
+    background: white;
+    height: 16em;
+    box-shadow:4px 4px 12px -2px rgba(209, 209, 209, 0.5);
+    border-radius: 5px;
+    margin: 7px;
+}
+.suggest>.box>.info{
+    padding: 0% 5%;
+}
+.suggest>.box>.info>p{
+    color: gray;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-weight: 600 ;
+    margin:2% 0;
+}
+.suggest>.box>.info>h3{
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+       font-weight: 600 ;  
+       margin: 1% 0% 7% 0;
+}
+.suggest>.box>.pic{
+    background: black;
+    height: 30%;
+    border-radius: 5px;
+
+}
+#bottom{
+    position: relative;
+}
+#bottom>.author{
+    text-overflow: ellipsis ;
+}
+#icon{
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    display:inline-block;
+}
+#icon a{
+    color: gray;
+    opacity: 0.5;
+}
+
+#icon>span{
+    vertical-align: top;
+    font-size: 1.2em;
+    bottom: 10px;    
+    padding: 5px;
+    border-right: 1px solid rgba(0,0,0,.15);
+    display:inline-block;
+    font-family: monospace;
+    text-decoration:none;
+    color: gray;
+    opacity: 0.5;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+    nav{
+        padding: 0;
+    }
+    nav>.rightbar{
+        padding: 20px 0 ;
+    }
+    nav>h2{
+        display: none;
+    }
+    #iconBar{
+        display: none !important;
+    }
+    .suggest{
+        width: auto;
+        display: block;
+    }
+    .suggest>.box{
+        width: auto;
+        display: block;
+    }
+    article{
+        width: auto;
+        padding: 1% 7%;
+    }
+
+
+}
+@media (min-width: 769px) and (max-width: 900px) {
+    nav{
+        padding: 0;
+    }
+    nav>.rightbar{
+        padding: 20px 0 ;
+    }
+    nav>h2{
+        display: none;
+    }
+    .suggest{
+        width: auto;
+        display: block;
+    }
+    .suggest>.box{
+        width: auto;
+        display: block;
+    }
+    article{
+        width: auto;
+        padding: 1% 7%;
+    }
+    #iconBar{
+        display: none ;
+    }
+
+}

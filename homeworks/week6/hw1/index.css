@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background:gold;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    padding-left: 1%;
+
+}
+nav > div{
+    display: inline-block;
+}
+.nav-title{
+    color: white;
+    font-size: 1.5em;
+    padding: 2px 5px;
+}
+.nav-menu{
+    color: grey;
+    width: auto;
+}
+ul{
+padding: 0px 5px;
+
+}
+ul li {
+    padding:5px 5px;
+}
+.nav-menu > ul  li{
+    list-style: none;
+    display:inline;
+}
+.nav-menu > ul  li:hover{
+    color: white;
+}
+header{
+    background: seashell;
+    height: auto;
+    padding: 5% 10%; 
+
+}
+header >h1{
+    font-size: 3em;
+
+}
+header > button{
+    background: sandybrown;
+    border: 0;
+    border-radius: 5px;
+    width: 12.5em;
+    height: 3em;
+    color: whitesmoke;
+    font-size: 1.2em;
+    transition: all 0.5s;
+}
+header > button::after{
+    content:"  >>";
+
+}
+header > button:hover{
+    background:rgb(250, 118, 3);
+}
+
+.box{
+    padding: 10px;
+    display:inline-block;
+    width: 30%;
+    vertical-align:text-top;
+    }
+article{
+    padding: 5% 5%; 
+    margin :0% 5%; 
+}
+article >.box>  button{
+    background: silver;
+    border: 0;
+    border-radius: 5px;
+    width: 10em;
+    height: 2.5em;
+    color: whitesmoke;
+    font-size: 18px;
+    transition: all 0.8s;
+}
+article >.box>  button::after{
+    content:" >>"
+}
+article >.box>   button:hover{
+    background: gray;
+}
+
+footer{
+    padding: 5% 10%; 
+
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .box{
+        padding: 1em;
+        display:block;
+        width: auto;
+    }
+    nav > div{
+        display: inline-block;
+    }
+    header{
+        background: seashell;
+        height: auto;
+        padding: 15% 10%; 
+    }
