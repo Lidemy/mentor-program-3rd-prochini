@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;}
+
+body{
+	background: linear-gradient(#FFC194, rgb(247, 58, 131)); ;
+	display: flex;
+	align-content:center;
+	justify-content: center;	
+	font-family:"WenQuanYi Zen Hei","\u6587\u6cc9\u9a5b\u6b63\u9ed1","PingFang TC","PingFang SC","Heiti TC","\u9ed1\u9ad4\u002d\u7e41","LiHei Pro","\u5137\u9ed1\u0020\u0050\u0072\u006f","Droid Sans","Roboto","Microsoft JhengHei","\u5fae\u8edf\u6b63\u9ed1\u9ad4";
+
+}
+
+
+.form{
+	background: white;
+	display:flex;
+	width: 40em;
+	justify-content: space-around;
+	flex-wrap: wrap;	
+	flex-direction: column;
+	align-content:center;
+	border: 0.5em solid #FFE53B; 
+	border-bottom-style: none ;
+	border-right-style: none;
+	border-left-style:none;
+	margin: 5em 0 ;
+	box-shadow: 2px 3px 4px #888888;
+}
+
+.info{
+	margin: 0.1em 1em;
+	padding: 1em;
+}
+.error{
+	background:rgb(253, 224, 228);
+
+}
+.checkEmail{
+	color: rgb(223, 6, 6);
+}
+ h1{
+	font-size: 2em;
+	font-weight: bold;
+}
+.header{
+	margin: 2em 2em;
+}
+.header > span{
+	color: red;
+}
+
+h2{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+h2::after{
+	content: "*";
+	color:red;
+}
+.other::after{
+	content: "";
+
+}
+
+  input[type="radio"] {
+	height: 1.4em;
+	opacity: 1;
+	
+}
+input[type="text"]{
+	border-bottom-style: 1px solid ;
+	border-top-style:none;
+	border-right-style: none;
+	border-left-style:none;
+	border-color:gray;
+	margin: 2em 0 0 0;
+	font-size: 1em;
+	font-family: "Microsoft JhengHei", serif;
+	outline: none;
+	background-color: transparent;
+}
+.submit{
+	width: 5em ;
+	height: 2em;
+	background-color:#3590f8;
+	border-radius:3px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:1em;
+	text-align: center;
+	text-decoration:none;
+	border:none;
+	outline: none;
+	font-family: inherit;
+	margin: 3em 0;
+}
+
+input[type="submit"]{
+	width: 100px;
+	height: 100px;
+}
+p{
+	color: red;
+}
+@media (max-width:500px){
+	.form{
+		width: 90%;
+	}
+
+
+}
+
+@media (max-width:800px){
+	
+}
+
