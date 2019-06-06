@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+  *, *:before, *:after {
+	box-sizing: border-box;
+  }
+  html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	background: #f25b5b;
+	font-family:"WenQuanYi Zen Hei","\u6587\u6cc9\u9a5b\u6b63\u9ed1","PingFang TC","PingFang SC","Heiti TC","\u9ed1\u9ad4\u002d\u7e41","LiHei Pro","\u5137\u9ed1\u0020\u0050\u0072\u006f","Droid Sans","Roboto","Microsoft JhengHei","\u5fae\u8edf\u6b63\u9ed1\u9ad4";
+}
+.wrapper{	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+	background: white;
+	width: 60em;
+	margin: 5em 0 10em 0;
+	border-radius: 7px;
+	padding: 5em 0 0 0 ;	
+}
+
+.message{
+	position: relative;
+	width: 30em;
+	border: 1px solid lightgray;
+	margin: 1em;
+	border-radius: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center; 
+	flex-grow:3;
+	padding: 2em;
+	line-height: 2em;
+}
+.avatar{
+	position: absolute;
+	left: -1.7em;
+	top: 2em;
+	background: white;
+	border: 1px solid lightgray;
+	border-radius: 50%;
+	padding: 3px;
+	z-index: 3;
+}
+header{
+	font-size: 2em;
+}
+h1{
+	font-weight: bold;
+	color: gray;
+}
+button{
+	font-weight: bold;
+    background: #f25b5b;
+    padding: 4px 5px 3px;
+    color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	border:none;
+	outline: none;
+}
+input{
+	width:20em;
+	border-style:none;
+	display: block;
+	outline: none;
+	margin: 10px 0;
+}
+textarea{
+	border-style:none;
+	outline: none;
+	overflow:hidden;
+	resize:none;
+	display: block;
+	width: 20em;
+}
+@media (max-width: 767px) {
+	.wrapper{
+		width: 100%;
+		}
+		.container{
+			width: 100%;
+		}
+header{
+	width: 70%;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+.message{
+	width: 80%;
+	padding: 1em;
+	margin:1em;
+	overflow:hidden;
+}
+.avatar{
+	display: none;
+}
+}
