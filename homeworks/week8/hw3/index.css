@@ -60,9 +60,9 @@ table {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
     }
-
+body
 .container{
-	background-image: url('https://i.imgur.com/lXSQaGk.jpg');
+	background-image: url('https://images.unsplash.com/photo-1489183988443-b37b7e119ba6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80');
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -70,16 +70,18 @@ table {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	font-family:"WenQuanYi Zen Hei","\u6587\u6cc9\u9a5b\u6b63\u9ed1","PingFang TC","PingFang SC","Heiti TC","\u9ed1\u9ad4\u002d\u7e41","LiHei Pro","\u5137\u9ed1\u0020\u0050\u0072\u006f","Droid Sans","Roboto","Microsoft JhengHei","\u5fae\u8edf\u6b63\u9ed1\u9ad4";
 }
 .wrapper{
-	margin: 10em 15em;
+	margin: 10em 10em 0 10em;
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns:25% 25% 25% 25%;
 	grid-template-rows:1fr 1fr 1fr 1fr 1fr;
 }
-.video{
+
+.box{
 	background-color: black;
   opacity: 0.8;
   filter: alpha(opacity=80);
@@ -87,10 +89,10 @@ table {
 	text-overflow:ellipsis; 
 	white-space:nowrap; 
 	overflow:hidden; 
-
 	transition: all 0.2s ease-out;
+	position: relative;
 }
-.video:hover { 
+.box:hover { 
 	opacity: 1 ;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
 	transform:scale(1.1,1.1);
@@ -103,8 +105,7 @@ table {
 	margin: 5px;
 }
 .preview{
-	width: 20em;
-
+	width: 100%;
 }
 .info{
 	display: flex;
@@ -116,4 +117,53 @@ table {
 }
 h2{
 	overflow: hidden;
+}
+.updateButton{
+	grid-column: 1/5;
+	width: 10em;
+	height: 3em;
+	margin: 30px auto;
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #67c5ff;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	transition: .4s;
+	background: #0f6ca7;
+}
+.updateButton:hover {
+	background: #67c5ff;
+	color: white;
+}
+@media (max-width: 767px){
+.container{
+		width: 100%;
+}
+.wrapper{
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows:auto;
+			margin: 1em ;
+}
+
+.box{
+		opacity: 1 ;
+		box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+
+}
+
+}
+@media (min-width: 768px) and (max-width: 1025px){
+.wrapper{
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-template-rows:auto;
+		margin: 2em ;
+}
+.box{
+	opacity: 1 ;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
 }

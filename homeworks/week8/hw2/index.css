@@ -135,22 +135,25 @@ textarea{
 	width: 20em;
 }
 @media (max-width: 767px) {
-	.wrapper{
+.wrapper{
 		width: 100%;
-		}
-		.container{
+}
+.container{
 			width: 100%;
-		}
+}
 header{
 	width: 70%;
 	font-size: 1.5em;
 	line-height: 1.5em;
 }
 .message{
-	width: 80%;
+	width: 90%;
 	padding: 1em;
 	margin:1em;
 	overflow:hidden;
+}
+.replyComment{
+	width: 100%;
 }
 .avatar{
 	display: none;
