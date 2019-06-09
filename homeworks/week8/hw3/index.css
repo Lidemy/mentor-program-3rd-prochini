@@ -60,21 +60,53 @@ table {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
     }
-body
-.container{
+body{
 	background-image: url('https://images.unsplash.com/photo-1489183988443-b37b7e119ba6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80');
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	font-family:"WenQuanYi Zen Hei","\u6587\u6cc9\u9a5b\u6b63\u9ed1","PingFang TC","PingFang SC","Heiti TC","\u9ed1\u9ad4\u002d\u7e41","LiHei Pro","\u5137\u9ed1\u0020\u0050\u0072\u006f","Droid Sans","Roboto","Microsoft JhengHei","\u5fae\u8edf\u6b63\u9ed1\u9ad4";
+
+}
+.container{
+	padding: 6em 10em;
+}
+
+header{
+	height: 15em;
+	width: 100%;
+	padding: 1em;
+}
+h3{
+	font-size: 3em;
+	font-family: gothic;
+	color:#66afe9 ;
+	text-align: center;
+	text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+#checkname{
+	padding: 0.4em 0.25em;
+	background: transparent;
+	color: #AFB5BB;
+	font-size: 1em;
+	border: 1px solid #ccc;
+	border-color: #66afe9;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	border-radius: 20px;
+}
+.search{
+	padding: 0.4em 0.25em;
+	background: transparent;
+	color: #AFB5BB;
+	font-size: 1em;
+	outline: 0;
+	border:none;
+	text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 }
 .wrapper{
-	margin: 10em 10em 0 10em;
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns:25% 25% 25% 25%;
@@ -99,8 +131,8 @@ body
 }
 .avatar{
 	display:inline-flex;
-	width:3em;
-	height:3em;
+	width:2em;
+	height:2em;
 	border-radius: 50%;
 	margin: 5px;
 }
@@ -126,26 +158,42 @@ h2{
 	display: inline-block;
 	padding: 0.3em 1em;
 	text-decoration: none;
-	color: #67c5ff;
+	color: white;
 	border: none;
 	outline: none;
 	border-radius: 3px;
 	transition: .4s;
-	background: #0f6ca7;
+	background: #66afe9;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
 }
 .updateButton:hover {
 	background: #67c5ff;
 	color: white;
 }
 @media (max-width: 767px){
+h3{
+	font-size: 2em;
+}
+#checkname{
+	font-size: 1em;
+}
+.search{
+	font-size: 1em;
+	width: 4em;
+}
+header{
+	width: 100%;
+	height: 10em;
+	line-height: 45px;
+}
 .container{
-		width: 100%;
+	width: 100%;
+	padding: 0 ;
 }
 .wrapper{
-			display: grid;
-			grid-template-columns: 100%;
-			grid-template-rows:auto;
-			margin: 1em ;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
 }
 
 .box{
@@ -156,11 +204,15 @@ h2{
 
 }
 @media (min-width: 768px) and (max-width: 1025px){
+.container{
+		width: 100%;
+		padding: 2em ;
+}
 .wrapper{
 		display: grid;
-		grid-template-columns:1fr 1fr 1fr;
-		grid-template-rows:auto;
-		margin: 2em ;
+		grid-template-columns:repeat(4, 1fr) ;
+		grid-template-rows:repeat(10, 1fr);
+		margin: 1em ;
 }
 .box{
 	opacity: 1 ;

@@ -35,7 +35,7 @@ document.querySelector('#content').addEventListener('input', (e) => {
   input = `content=${e.srcElement.value}`;
 });
 
-const addComment = function () {
+const addComment = () => {
   document.querySelector('#content').value = '';
   const http = new XMLHttpRequest();
   const url = 'https://lidemy-book-store.herokuapp.com/posts?';
