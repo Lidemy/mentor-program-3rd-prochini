@@ -14,15 +14,13 @@
 
 ## JSONP 是什麼？
 
-1. HTML 內含一個可處理 JSON 資料的函式
-2. 使用 `script` 向遠端伺服器發送請求取得內容，會把資料以引數 (Argument)傳遞到函式中。
+使用 `script` 向遠端伺服器發送請求取得內容，會把資料以引數 (Argument)傳遞到函式中。
 
 ## 要如何存取跨網域的 API？
 
 1. CORS -Response Header 內含 `Access-Control-Allow-Origin: *` 訪問控制來源: 允許任何來源存取資源
 2. JSONP
-3. JQuery
-4. 在伺服器端建立資料代理程式
+3. 在伺服器端建立資料代理程式
 
 ## 為什麼我們在第四週時沒碰到跨網域的問題，這週卻碰到了？
 
