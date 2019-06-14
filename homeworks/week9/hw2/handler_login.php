@@ -5,7 +5,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 if(empty($username)|| empty($password)){die('請輸入資料');}
-$sql = 'SELECT `username`, `password`,`nickname` FROM `prochini_users` WHERE 50';
+$sql = 'SELECT `username`, `password`,`nickname` FROM `prochini_users`';
 $result = $conn->query($sql);
 if($result->num_rows>0) {
     while ($row = $result->fetch_assoc()){
@@ -15,8 +15,8 @@ if($result->num_rows>0) {
         }
     }my_msg('帳號密碼不符，登入失敗','./index.php');
 }
-Function my_msg($msg,$redirect){ 
-    echo "<SCRIPT Language=javascript>"; 
+function my_msg($msg,$redirect){ 
+    echo "<script language=javascript>"; 
     echo "window.alert('".$msg."')"; 
     echo "</SCRIPT>"; 
     echo "<script language=\"javascript\">"; 

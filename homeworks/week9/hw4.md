@@ -8,7 +8,7 @@
 
 - cookie 像是去看演唱會用門票換感應式手環，之後進出只要刷下手環就可以隨意進出，也可以儲值在裡面。
 - 因為 HTTP 是 stateless，每次都會忘記你是誰，cookie 是他的小小記憶體。
-- php 是在登入的時候，伺服器確認帳號密碼沒問題之後，就傳送一個cookie 到伺服器，cookie 被儲存在 application 中的 localstorage 中 ， 可以看到 user id 和 暱稱
+- php 是在登入的時候，伺服器確認帳號密碼沒問題之後，就傳送一個cookie 到用戶端，cookie 被儲存在 application 中的 localstorage 中 ， 可以看到 user id 和 暱稱
 - 下次再造訪的時候，送出 request 時，把存在本機中的 cookie 送出去了，server 收到 cookie 之後作出對 cookie 的相對應資料。
 - 可以把個人喜好存在 cookie ，避免佔用 server 空間
 

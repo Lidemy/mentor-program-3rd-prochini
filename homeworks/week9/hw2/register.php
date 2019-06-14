@@ -24,8 +24,8 @@ if($result->num_rows>0) {
     my_msg('註冊成功','./login.php'); 
 }
 
-Function my_msg($msg,$redirect){ 
-    echo "<SCRIPT Language=javascript>"; 
+function my_msg($msg,$redirect){ 
+    echo "<script language=javascript>"; 
     echo "window.alert('".$msg."')"; 
     echo "</SCRIPT>"; 
     echo "<script language=\"javascript\">"; 
