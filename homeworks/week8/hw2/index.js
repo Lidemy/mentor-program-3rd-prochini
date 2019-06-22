@@ -32,7 +32,7 @@ getComment();
 // 監聽 輸入框
 let input = '';
 document.querySelector('#content').addEventListener('input', (e) => {
-  input = `content=${e.srcElement.value}`;
+  input = `content=${encodeURIComponent(e.srcElement.value)}`;
 });
 
 const addComment = () => {
@@ -46,4 +46,4 @@ const addComment = () => {
 };
 
 document.querySelector('.send').addEventListener('click', addComment, false);
-document.querySelector('.send').addEventListener('click', () => { getComment(addComment); });
+document.querySelector('.send').addEventListener('click', () => { getComment(); });

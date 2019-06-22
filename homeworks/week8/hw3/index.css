@@ -111,6 +111,8 @@ h3{
 	grid-gap: 10px;
 	grid-template-columns:25% 25% 25% 25%;
 	grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+	justify-content: center;
+	align-items: center; 
 }
 
 .box{
@@ -150,12 +152,14 @@ h3{
 h2{
 	overflow: hidden;
 }
+.btn{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .updateButton{
-	grid-column: 1/5;
 	width: 10em;
 	height: 3em;
-	margin: 30px auto;
-	display: inline-block;
 	padding: 0.3em 1em;
 	text-decoration: none;
 	color: white;
@@ -165,10 +169,14 @@ h2{
 	transition: .4s;
 	background: #66afe9;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	margin: 1em ;
 }
 .updateButton:hover {
 	background: #67c5ff;
 	color: white;
+}
+.hide{
+	display:none;
 }
 @media (max-width: 767px){
 h3{
