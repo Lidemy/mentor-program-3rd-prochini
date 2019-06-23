@@ -28,12 +28,8 @@ function loadData(gameName, offset) {
           `;
         container.appendChild(div);
       }
-      if (stream.length === 20) {
-        const updateButton = document.createElement('button');
-        updateButton.classList.add('btn');
-        updateButton.classList.add('updateButton');
-        updateButton.textContent = 'show more';
-        container.appendChild(updateButton);
+      if (stream.length < 20) {
+        document.querySelector('.updateButton').classList.add('hide');
       }
     } else {
       console.log(request.status);
