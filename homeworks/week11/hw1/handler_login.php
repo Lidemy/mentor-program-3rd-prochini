@@ -3,7 +3,7 @@ require_once('./conn.php');
 
 $username = $_POST['username'];
 $password = $_POST['password'];
-$id = hash('sha256', $username); 
+$id = hash('sha256', bin2hex(random_bytes(15))); 
 
 if(empty($username)|| empty($password)){die('請輸入資料');}
 
