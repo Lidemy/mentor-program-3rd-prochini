@@ -1,3 +1,11 @@
+## hw1：短網址系統設計
+
+![Imgur](https://i.imgur.com/mnvpKPx.jpg)
+
+## hw2：部署
+
+http://prochini.com/php_commentboard/index.php
+
 ## 什麼是 DNS？Google 有提供的公開的 DNS，對 Google 的好處以及對一般大眾的好處是什麼？
 
 對 Google 的好處:
@@ -44,3 +52,5 @@ ACID，是指資料庫管理系統（database management system）在寫入或�
 並行的交易必須分開執行，一個交易不會影響到其它交易的執行結果，或被其它交易所干擾。
 4. 持久性（durability）。
 將結果永久儲存於資料庫中，就算意外的系統故障或停電狀況具備還原成上個已知狀態的能力。
+
+
