@@ -1,0 +1,238 @@
+body{
+    margin:0px;
+
+}
+nav{
+    position: relative;
+    box-shadow: 4px 4px 12px -2px rgba(209, 209, 209, 0.5);
+    width: 100%;
+    height: 4em;
+    display: inline-block;
+    padding: 0px 15%;
+    box-sizing: border-box;
+    div{
+        display: inline-block;
+    }
+    a{
+        padding: 10px 10px 10px 10px;
+        display: inline-block;
+        position: absolute;
+        top: 10%;
+    }
+    h2{
+        display: inline-block;
+        cursor:pointer;
+        position: absolute;
+        left: 21%;
+        top: 10%
+    }
+    
+}
+.rightbar{
+    right:20px;
+    top: 10px;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    padding: 20px 14% ;
+    box-sizing: border-box;
+    top: 4%;
+    a{
+        padding: 0px 10px ;
+        transition: all 1s;
+        width:30px
+    }
+    a:hover{
+        color:wheat;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        }
+
+}
+
+#prochini{
+    border-radius: 50%;
+    vertical-align: sub;
+}
+article{
+    padding: 3% 10%;
+    position: relative;
+    padding: 2% 25% ;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    color: rgba(0,0,0,84) ;
+    h1{
+        font-size: 2.5em;
+        font-family:  Georgia,Cambria,"Times New Roman",Times,serif;
+        font-weight: 400;
+        padding: 5px 0;    
+        letter-spacing: 0;
+    }
+
+}
+
+.author{
+    display:inline-block;
+    margin: 0;
+    a{
+        img{
+            width: 40px;
+            border-radius: 50%;
+        }
+    }
+    h5{
+        display:inline-block;
+        color: black;
+        font-family: Arial,sans-serif;
+        font-weight:100;
+        line-height: 1.2;
+        margin: 0;
+        padding-left: 15px;
+        vertical-align: super;
+    }
+    h5{
+        P{
+            color: gray;
+            display:inline;
+            margin: 0;
+        }
+    }
+
+
+}
+
+article{
+    p{
+        font-size: 1.3em;
+        line-height: 1.5em;
+        line-height: 1.4;
+        span{
+            font-style: italic;
+            font-size: 1em;
+            line-height: 1.4;
+            font-weight: 520;
+        }
+        a{
+            color: black;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+
+#iconBar{
+    position: fixed;
+    top: -200px;
+    width: 10px;
+    display: block;
+    transition: top ease 0s;
+    margin: 0 16%;
+    box-sizing: border-box;
+    a{
+        display:block;
+        padding: 5px;
+        font-family: monospace;
+        color: gray;
+        text-decoration:none;
+        opacity: 0.5;
+    }
+    a:hover{
+        opacity: 0.8;
+        filter: Alpha(opacity=50);
+    }
+    }
+    .suggest{
+        background:whitesmoke;
+        height: 31em;
+        display: flex;
+        padding: 2% 0;
+        justify-content:  center;
+        .box{
+            display:inline-block;
+            width: auto;
+            background: white;
+            height: 16em;
+            box-shadow:4px 4px 12px -2px rgba(209, 209, 209, 0.5);
+            border-radius: 5px;
+            margin: 7px;
+            .pic{
+                background: black;
+                height: 30%;
+                border-radius: 5px;            
+            }
+            .info{
+                padding: 0% 5%;
+                p{
+                    color: gray;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+                    font-weight: 600 ;
+                    margin:2% 0;
+                }
+                h3{
+
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+                       font-weight: 600 ;  
+                       margin: 1% 0% 7% 0;
+                }
+            }
+        }
+    }
+    #bottom{
+        position: relative;
+        .author{
+            text-overflow: ellipsis ;
+        }
+    }
+    #icon{
+        position: absolute;
+        right: 0%;
+        top: 30%;
+        display:inline-block;
+        a{
+            color: gray;
+            opacity: 0.5;
+        }
+        span{
+            vertical-align: top;
+            font-size: 1.2em;
+            bottom: 10px;    
+            padding: 5px;
+            border-right: 1px solid rgba(0,0,0,.15);
+            display:inline-block;
+            font-family: monospace;
+            text-decoration:none;
+            color: gray;
+            opacity: 0.5;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 900px) {
+        nav{
+            padding: 0;
+            .rightbar{
+                padding: 20px 0 ;
+            }
+            h2{
+                display: none;
+            }
+        }
+        .suggest{
+            width: auto;
+            display: block;
+            .box{
+                width: auto;
+                display: block;
+            }
+            
+        }
+        article{
+            width: auto;
+            padding: 1% 7%;
+        }
+        #iconBar{
+            display: none ;
+        }
+    
+
+    }
