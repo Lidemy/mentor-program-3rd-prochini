@@ -1,14 +1,32 @@
-const arr = [];
 class Stack {
-  push(n) {
-    arr[arr.length] = n;
-    console.log(arr);
+  constructor() {
+    this.items = [];
+  }
+
+  push(element) {
+    this.items[this.items.length] = element;
   }
 
   pop() {
-    const num = arr[arr.length - 1];
-    arr.length -= 1;
+    const num = this.items[this.items.length - 1];
+    this.items.length -= 1;
     return num;
+  }
+}
+
+
+class Queue {
+  constructor() {
+    this.items = [];
+  }
+
+  push(element) {
+    this.items[this.items.length] = element;
+  }
+
+  pop() {
+    const firstElement = this.items.shift();
+    return firstElement;
   }
 }
 const stack = new Stack();
@@ -19,18 +37,6 @@ console.log(stack.pop());
 console.log(stack.pop());
 console.log(stack.pop());
 
-const Array = [];
-class Queue {
-  push(n) {
-    Array[Array.length] = n;
-    console.log(Array);
-  }
-
-  pop() {
-    const firstElement = Array.shift();
-    return firstElement;
-  }
-}
 const queue = new Queue();
 queue.push(4);
 queue.push(5);
