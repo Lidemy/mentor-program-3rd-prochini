@@ -1,0 +1,9 @@
+.container {
+    width: 30em;
+    height: 30em;
+    margin: 10em auto;
+    padding: 2em;
+    border: 1px midnightblue solid;
+    overflow: auto;
+    border-radius: 10px;
+}
