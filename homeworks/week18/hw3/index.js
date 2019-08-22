@@ -1,6 +1,4 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable eqeqeq */
-/* eslint-disable no-undef */
+
 $(() => {
   let list = [];
   let index = 0;
