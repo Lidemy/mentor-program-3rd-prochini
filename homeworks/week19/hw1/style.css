@@ -1,0 +1,15 @@
+.container {
+    max-width: 40rem;
+    height: 30em;
+    margin: 10em auto;
+    overflow: auto;
+
+}
+
+button{
+    float:right ;
+    width: 5em;
+}
+li{
+    font-size: 1.2em;
+}
