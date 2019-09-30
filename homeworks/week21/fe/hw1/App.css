@@ -1,0 +1,62 @@
+body{
+  font-family: 'Work Sans', sans-serif;
+  background: #111;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px
+}
+.wrapper{
+  width: 400px;
+  margin: 0 auto;
+}
+.filter{
+  display: flex;
+  
+}
+.filter div{
+  text-decoration:underline;
+
+  cursor: pointer;
+  margin: 20px ;
+}
+.list{
+  border: 1px solid gray;
+  margin-top: 20px;
+  height: 30em;
+  overflow: auto;
+  padding:10px
+}
+.list-item{
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid gray;
+  height: 1.5em;
+  padding:10px
+}
+.list-item_state{
+  margin: 0 10px;
+}
+.list-item_action{
+  position: absolute;
+  right:0;
+  margin: 0 10px;
+}
+button{
+  background: #111;
+  user-select: none;
+  display: inline-block;
+  border: 0.1em solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  color: #FFF;
+  }
+button:hover{
+  animation:  .3s ease-out;
+}
+button:active{
+  opacity: 1;
+  background: white;
+  color: inherit;
+}
