@@ -1,14 +1,15 @@
 ## React Router 背後的原理你猜是怎麼實作的？
-### 調用 History API 
+### 流程
 - 頁面 URL 事件的註冊
 - 在頁面 load / hashchange /location 事件觸發時，進行 callback
 - URL 對應 location，UI 對應 components ，實現 URL 和 UI 的同步 
-
-1. 針對 h5 的 history 來講，push/ replace只是將 url 進行改變 
-2. Router 中拿到需要跳轉的路徑，然後傳遞給history 
-3. 從 Router 結構中獲取對應的處理方法 
-4. 在進行路由處理的時候，根據props中的資訊，進行頁面的跳轉或者重新整理
-
+### 實作
+1. 將 Route 實例註冊到 instance ，綁定 popstate 事件
+2. 點擊Link 標籤
+3. 禁止 a 標籤的預設動作
+4. history.pushState 把路徑 push 到 history
+5. 觸發 popstate 事件
+6.  match Route 裡的事件，確認是否要渲染 components
 
 參考資料 :
 http://zhenhua-lee.github.io/react/history.html
